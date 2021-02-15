@@ -1,7 +1,7 @@
 # Management accounting system
 Based on Graph Theory implementation of Cost Graph algorithm in calculation direct, production and general business costs.
 ## Bussiness process in BPM notations
-![image](https://github.com/danmaxdanilov/bi_finance/blob/master/bi_finance.png)
+![image](https://github.com/danmaxdanilov/bi_finance/blob/main/bi_finance.png)
 ## Description
 Main calculation in Cost Graph algorithm is calculation of system of linear algebraic equations, which is build from graph by using "Finding shortest path" algorithm.
 To simplify calculation of shortest path between Profit Center ("Outlet") and low-level Cost Center ("Source") used Neo4j database engine.
