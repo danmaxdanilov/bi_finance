@@ -16,3 +16,4 @@ Builds monthly company profit and loss statement.
 1. Explanation of Cost Graph algorithm by Alexander Polyakov on his youtube channel. (https://www.youtube.com/channel/UCtTxARHnTjuawXwoiShvPDQ)
 1. https://en.wikipedia.org/wiki/System_of_linear_equations
 1. https://transportgeography.org/contents/methods/graph-theory-measures-indices/cost-graph/
+1. https://corporatefinanceinstitute.com/resources/knowledge/accounting/profit-and-loss-statement-pl/
