@@ -52,50 +52,5 @@ namespace SL
             _bIDbContext.CostAccountingReport.AddRange(report);
             _bIDbContext.SaveChanges();
         }
-
-        private string GetMonthName(DateTime date)
-        {
-            switch (date.Month)
-            {
-                case 1:
-                    return "1 Январь";
-                case 2:
-                    return "2 Февраль";
-                case 3:
-                    return "3 Март";
-                case 4:
-                    return "4 Апрель";
-                case 5:
-                    return "5 Май";
-                case 6:
-                    return "6 Июнь";
-                case 7:
-                    return "7 Июль";
-                case 8:
-                    return "8 Август";
-                case 9:
-                    return "9 Сентябрь";
-                case 10:
-                    return "10 Октябрь";
-                case 11:
-                    return "11 Ноябрь";
-                case 12:
-                    return "12 Декабрь";
-                default:
-                    return string.Empty;
-            }
-        }
-
-        private int GetQuarter(DateTime date)
-        {
-            if (date.Month >= 1 && date.Month <= 3)
-                return 1;
-            else if (date.Month >= 4 && date.Month <= 6)
-                return 2;
-            else if (date.Month >= 7 && date.Month <= 9)
-                return 3;
-            else
-                return 4;
-        }
     }
 }
