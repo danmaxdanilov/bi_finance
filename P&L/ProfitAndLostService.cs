@@ -97,9 +97,15 @@ namespace SL
                     x.ProfitCenter == income.ProfitCenter &&
                     x.Year == stage.StageYear &&
                     x.Month == stage.StageMonth &&
-                    x.Line == income.Line);
-            if (invoice == null)
-            {
+                    x.Line == income.Line)
+                    
+                    Create(invoice);
+                    
+            return invoice.Id;
+        }
+        
+        private void Create(Invoice invoice)
+        {        
                 invoice = _context.Invoice
                     .FirstOrDefault(x => x.Number == income.InvoiceNumber + 100000 && x.Year == stage.StageYear);
                 if (invoice == null)
@@ -114,8 +120,6 @@ namespace SL
                     _context.Invoice.Add(invoice);
                     _context.SaveChanges();
                 }
-            }
-            return invoice.Id;
         }
 
         private void AddInvoiceOperation(int invoiceId, string type, RevenueModel revenue)
